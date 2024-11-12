@@ -12,143 +12,143 @@ import TextFieldCustom from "./components/TextFieldCustom";
 
 function App(){
     const itemsUso = [
-        "Aparência Geral", "Pintura Superior", "Pintura Lateral", "Painel", "Forração", 
-        "Estofamento", "Motor", "Vidros", "Espelhos", "Limpador", "Pneus Dianteiros", 
-        "Pneus Traseiros", "Faróis", "Porta Malas", "Para Choques Dianteiro", "Para Choques Traseiro", 
-        "Para Lamas", "Cinto de Segurança"
+        "TESTE85", "TESTE86", "TESTE87", "TESTE57", "TESTE88", 
+        "TESTE89", "TESTE47", "TESTE90", "TESTE91", "TESTE92", "TESTE93", 
+        "TESTE94", "TESTE95", "TESTE46K", "TESTE96", "TESTE97", 
+        "TESTE98", "TESTE99"
     ];
 
-    const itemsFuncionando = [
-        "Motor", "Bateria", "Ignição", "Embreagem", "Direção", 
-        "Freios", "Freios Estacionamento", "Luzes (Freio, Ré, Piscas)", "Nível do Óleo", "Nível de Água", 
-        "Nível do Fluido (Freio e Hid)", "Alternador", "Ar Condicionado", "Suspensão"
+    const TESTE80 = [
+        "TESTE47", "TESTE100", "TESTE101", "TESTE102", "TESTE103", 
+        "TESTE104", "TESTE105", "TESTE106", "TESTE107", "TESTE108", 
+        "TESTE109", "TESTE110", "TESTE111", "TESTE112"
     ];
 
     const [form, setForm] = useState({
         dadosSoliEx: {
-            protocolSETEC: '', //protocolo SETEC/SC
-            documentOption: DocumentEnum.IPL, //IPL, TCO ou Processo
-            documentNumber: '', // numero do IPL, TCO ou Processo
-            photoBegin: '', //nome da primeira foto
-            photoEnd: '', //nome da ultima foto
-            currentDate: '', //dia do formulario
-            currentTime: '', //hora do formulario
+            TEST1: '', //
+            TEST2: DocumentEnum.TESTE113, //
+            TEST3: '', //
+            TEST4: '', //
+            TEST5: '', //
+            TEST6: '', //
+            TEST7: '', //
         },
-        dadosCRLV: {
-            CRLVNumber: '', //numero do CLRV
-            renavan: '', //renavan
-            CRLVDate: '', //data do CRLV
-            espTipo: '', // campo fala Esp. / tipo, não sei o que esp. é
-            combustivelCarro: '', //combustivel usado no carro
-            marcaCarro: '', //marca do carro
-            modeloCarro: '', //modelo do carro
-            corCarro: '', //cor do carro
-            anoCarro: '', //ano de fabricação do carro
-            placaCarro: '', //placa do carro
-            municipioUf: '', //municipio e Unidade Federativa
-            chassi: '', //chassi do carro
+        dadosALGO: {
+            TEST8: '', //
+            TEST9: '', //
+            TEST10: '', //
+            TEST11: '', //
+            TEST12: '', //
+            TEST13: '', //
+            TEST14: '', //
+            TEST15: '', //
+            TEST16: '', //
+            TEST17: '', //
+            TEST18: '', //
+            TEST19: '', //
         },
-        dadosVeiculo: {
-            marcaCarro: '', //marca do carro
-            modeloCarro: '', //modelo do carro
-            motorCarro: '', //motor do veiculo
-            corCarro: '', //cor do carro
-            anoCarro: '', //ano de fabricação do carro
-            placaCarro: '', //placa do carro
-            codigoPlaca: '', //codigo da placa
-            municipioUf: '', //municipio e Unidade Federativa
-            chassi: '', //chassi do carro
-            codigoPlaqueta: '', //codigo da plaqueta
-            codigoLacre: '', //codigo do lacre
-            caracteristicas: {
-                monobloco: false,  // Certifique-se de que são booleanos
-                chassis: false,
-                automatico: false,
-                numeroPortas: '',
-                numeroEixos: ''
+        dadosALGO2: {
+            TEST13: '', //
+            TEST14: '', //
+            TEST20: '', //
+            TEST15: '', //
+            TEST16: '', //
+            TEST17: '', //
+            TEST21: '', //
+            TEST18: '', //
+            TEST19: '', //
+            TEST22: '', //
+            TEST23: '', //
+            TEST24: {
+                TEST25: false,  //
+                TEST19s: false,
+                TEST26: false,
+                TEST27: '',
+                TEST28: ''
             },
             especieOption: {
-                optionAtiva: 'Passageiro',
+                optionAtiva: 'TESTE78ETHING',
                 inputOutra: ''
             },
             tipo: {
-                automovel: false,
-                caminhao: false,
-                micronibus: false,
-                utilitario: false,
-                onibus: false,
-                caminhoneta: false,
-                caminhonete: false,
-                outro: false,
-                outroInput: ''
+                TESTE29: false,
+                TESTE30: false,
+                TESTE31: false,
+                TESTE32: false,
+                TESTE33: false,
+                TESTE34: false,
+                TESTE35: false,
+                TESTE36: false,
+                TESTE36Input: ''
             },
-            numeroMotor: '',
-            numeroCaixaCambio: '',
-            numeroEixoTraseiro: '',
-            numeroCarroceria: '',
-            numeroCabine: '',
-            hodometro: '',
-            numeroVidros: '',
-            numeroEtiquetas: {
-                inputNumero: '',
-                porta: false,
-                motor: false,
-                piso: false
+            TESTE37: '',
+            TESTE38: '',
+            TESTE39: '',
+            TESTE40: '',
+            TESTE41: '',
+            TESTE42: '',
+            TESTE43: '',
+            TESTE44: {
+                TESTE45: '',
+                TESTE46: false,
+                TESTE47: false,
+                TESTE48: false
             },
-            anoCintoSeg: ''
+            TESTE49: ''
         },
-        fotografias: {
+        TESTE50: {
             gerais: {
-                frontal: false,
-                traseira: false,
-                lateralEsquerda: false,
-                lateralDireita: false,
-                motor: false,
-                cabine: false,
-                carroceria: false,
-                hodometro: false,
-                painel: false,
+                TESTE51: false,
+                TESTE52: false,
+                TESTE53: false,
+                TESTE54: false,
+                TESTE47: false,
+                TESTE55: false,
+                TESTE56: false,
+                TESTE42: false,
+                TESTE57: false,
             },
             identificacao: {
-                placas: false,
-                plaquetas: false,
-                codigoPlacas: false,
-                codigoPlaquetas: false,
-                lacres: false,
-                numeroMotor: false,
-                numeroChassi: false,
+                TESTE58: false,
+                TESTE59: false,
+                TEST21s: false,
+                TEST22s: false,
+                TESTE60: false,
+                TESTE37: false,
+                numeroTEST19: false,
                 etiquetas: false,
-                numeroVidros: false,
-                numeroCambio: false,
+                TESTE43: false,
+                TESTE61: false,
             },
         },
         estadosConsAcess: {
             estadosUso: itemsUso.reduce((acc, item, index) => ({ ...acc, [index]: 0 }), {}),
             acessorios: {
-                macaco: false,
-                triangulo: false,
-                estepe: false,
-                extintor: false,
-                chaveRoda: false,
+                TESTE62: false,
+                TESTE63: false,
+                TESTE64: false,
+                TESTE65: false,
+                TESTE66: false,
             },
-            outros: {
-                arCondicionado: false,
-                vidrosEletricos: false,
-                alarme: false,
-                tapetes: false,
-                direcaoHidraulica: false,
-                travasEletricas: false,
-                peliculas: false,
-                antena: false,
-                farolMilha: false,
-                farolNeblina: false,
-                som: false,
+            TESTE36s: {
+                TESTE67: false,
+                TESTE68: false,
+                TESTE69: false,
+                TESTE70: false,
+                TESTE71: false,
+                TESTE72: false,
+                TESTE73: false,
+                TESTE74: false,
+                TESTE75: false,
+                TESTE77: false,
+                TESTE78: false,
             },
-            estadosFuncionamento: itemsFuncionando.reduce((acc, item, index) => ({ ...acc, [index]: 0 }), {}),
-            observacoes: '',
-            carga: '',
-            compartimentoExtra: '',
-            avarias: ''
+            TESTE79: TESTE80.reduce((acc, item, index) => ({ ...acc, [index]: 0 }), {}),
+            TESTE81: '',
+            TESTE82: '',
+            TESTE83: '',
+            TESTE84: ''
         }
     })
 
@@ -177,7 +177,7 @@ function App(){
     }, [handleChange]);
     
     const handleEspecieOptionChange = (optionAtiva, inputOutra = '') => {
-        handleChange('dadosVeiculo.especieOption', { optionAtiva, inputOutra });
+        handleChange('dadosALGO2.especieOption', { optionAtiva, inputOutra });
     };
 
     // Função para atualizar o estado ao clicar nos radio buttons
@@ -199,8 +199,8 @@ function App(){
             ...prevForm,
             estadosConsAcess: {
                 ...prevForm.estadosConsAcess,
-                estadosFuncionamento: {
-                    ...prevForm.estadosConsAcess.estadosFuncionamento,
+                TESTE79: {
+                    ...prevForm.estadosConsAcess.TESTE79,
                     [lineIndex]: selectedIndex, // Atualiza o estado da linha específica
                 },
             },
@@ -212,118 +212,118 @@ function App(){
     
         // Dados Solicitante
         alert('Dados do Solicitante:');
-        alert('Protocolo SETEC/SC:', form.dadosSoliEx.protocolSETEC);
-        alert('Opção do Documento:', form.dadosSoliEx.documentOption);
-        alert('Número do Documento:', form.dadosSoliEx.documentNumber);
-        alert('Foto Inicial:', form.dadosSoliEx.photoBegin);
-        alert('Foto Final:', form.dadosSoliEx.photoEnd);
-        alert('Data do Formulário:', form.dadosSoliEx.currentDate);
-        alert('Hora do Formulário:', form.dadosSoliEx.currentTime);
+        alert('TESTE:', form.dadosSoliEx.TEST1);
+        alert('TESTE:', form.dadosSoliEx.TEST2);
+        alert('TESTE:', form.dadosSoliEx.TEST3);
+        alert('TESTE:', form.dadosSoliEx.TEST4);
+        alert('TESTE:', form.dadosSoliEx.TEST5);
+        alert('TESTE:', form.dadosSoliEx.TEST6);
+        alert('TESTE:', form.dadosSoliEx.TEST7);
     
         // Dados CRLV
-        alert('Dados do CRLV:');
-        alert('Número do CRLV:', form.dadosCRLV.CRLVNumber);
-        alert('Renavan:', form.dadosCRLV.renavan);
-        alert('Data do CRLV:', form.dadosCRLV.CRLVDate);
-        alert('Espécie/Tipo:', form.dadosCRLV.espTipo);
-        alert('Combustível:', form.dadosCRLV.combustivelCarro);
-        alert('Marca do Carro:', form.dadosCRLV.marcaCarro);
-        alert('Modelo do Carro:', form.dadosCRLV.modeloCarro);
-        alert('Cor do Carro:', form.dadosCRLV.corCarro);
-        alert('Ano do Carro:', form.dadosCRLV.anoCarro);
-        alert('Placa do Carro:', form.dadosCRLV.placaCarro);
-        alert('Município e UF:', form.dadosCRLV.municipioUf);
-        alert('Chassi do Carro:', form.dadosCRLV.chassi);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO.TEST8);
+        alert('TESTE:', form.dadosALGO.TEST9);
+        alert('TESTE:', form.dadosALGO.TEST10);
+        alert('TESTE:', form.dadosALGO.TEST11);
+        alert('TESTE:', form.dadosALGO.TEST12);
+        alert('TESTE:', form.dadosALGO.TEST13);
+        alert('TESTE:', form.dadosALGO.TEST14);
+        alert('TESTE:', form.dadosALGO.TEST15);
+        alert('TESTE:', form.dadosALGO.TEST16);
+        alert('TESTE:', form.dadosALGO.TEST17);
+        alert('TESTE:', form.dadosALGO.TEST18);
+        alert('TESTE:', form.dadosALGO.TEST19);
     
         // Dados do Veículo
-        alert('Dados do Veículo:');
-        alert('Marca do Carro:', form.dadosVeiculo.marcaCarro);
-        alert('Modelo do Carro:', form.dadosVeiculo.modeloCarro);
-        alert('Motor do Carro:', form.dadosVeiculo.motorCarro);
-        alert('Cor do Carro:', form.dadosVeiculo.corCarro);
-        alert('Ano do Carro:', form.dadosVeiculo.anoCarro);
-        alert('Placa do Carro:', form.dadosVeiculo.placaCarro);
-        alert('Código da Placa:', form.dadosVeiculo.codigoPlaca);
-        alert('Município e UF:', form.dadosVeiculo.municipioUf);
-        alert('Chassi do Carro:', form.dadosVeiculo.chassi);
-        alert('Código da Plaqueta:', form.dadosVeiculo.codigoPlaqueta);
-        alert('Código do Lacre:', form.dadosVeiculo.codigoLacre);
-        alert('Características do Veículo:');
-        alert('Monobloco:', form.dadosVeiculo.caracteristicas.monobloco);
-        alert('Chassis:', form.dadosVeiculo.caracteristicas.chassis);
-        alert('Automático:', form.dadosVeiculo.caracteristicas.automatico);
-        alert('Número de Portas:', form.dadosVeiculo.caracteristicas.numeroPortas);
-        alert('Número de Eixos:', form.dadosVeiculo.caracteristicas.numeroEixos);
-        alert('Espécie do Veículo:');
-        alert('Opção Ativa:', form.dadosVeiculo.especieOption.optionAtiva);
-        alert('Outro Valor:', form.dadosVeiculo.especieOption.inputOutra);
-        alert('Tipo do Veículo:');
-        alert('Automóvel:', form.dadosVeiculo.tipo.automovel);
-        alert('Caminhão:', form.dadosVeiculo.tipo.caminhao);
-        alert('Micrônibus:', form.dadosVeiculo.tipo.micronibus);
-        alert('Utilitário:', form.dadosVeiculo.tipo.utilitario);
-        alert('Ônibus:', form.dadosVeiculo.tipo.onibus);
-        alert('Caminhoneta:', form.dadosVeiculo.tipo.caminhoneta);
-        alert('Caminhonete:', form.dadosVeiculo.tipo.caminhonete);
-        alert('Outro:', form.dadosVeiculo.tipo.outro);
-        alert('Outro (Input):', form.dadosVeiculo.tipo.outroInput);
-        alert('Outras Informações do Veículo:');
-        alert('Número do Motor:', form.dadosVeiculo.numeroMotor);
-        alert('Número da Caixa de Câmbio:', form.dadosVeiculo.numeroCaixaCambio);
-        alert('Número do Eixo Traseiro:', form.dadosVeiculo.numeroEixoTraseiro);
-        alert('Número da Carroceria:', form.dadosVeiculo.numeroCarroceria);
-        alert('Número da Cabine:', form.dadosVeiculo.numeroCabine);
-        alert('Hodômetro:', form.dadosVeiculo.hodometro);
-        alert('Número de Vidros:', form.dadosVeiculo.numeroVidros);
-        alert('Etiquetas do Veículo:');
-        alert('Número de Etiquetas:', form.dadosVeiculo.numeroEtiquetas.inputNumero);
-        alert('Etiqueta Porta:', form.dadosVeiculo.numeroEtiquetas.porta);
-        alert('Etiqueta Motor:', form.dadosVeiculo.numeroEtiquetas.motor);
-        alert('Etiqueta Piso:', form.dadosVeiculo.numeroEtiquetas.piso);
-        alert('Ano do Cinto de Segurança:', form.dadosVeiculo.anoCintoSeg);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO2.TEST13);
+        alert('TESTE:', form.dadosALGO2.TEST14);
+        alert('TESTE:', form.dadosALGO2.TEST20);
+        alert('TESTE:', form.dadosALGO2.TEST15);
+        alert('TESTE:', form.dadosALGO2.TEST16);
+        alert('TESTE:', form.dadosALGO2.TEST17);
+        alert('TESTE:', form.dadosALGO2.TEST21);
+        alert('TESTE:', form.dadosALGO2.TEST18);
+        alert('TESTE:', form.dadosALGO2.TEST19);
+        alert('TESTE:', form.dadosALGO2.TEST22);
+        alert('TESTE:', form.dadosALGO2.TEST23);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO2.TEST24.TEST25);
+        alert('TESTE:', form.dadosALGO2.TEST24.TEST19s);
+        alert('TESTE:', form.dadosALGO2.TEST24.TEST26);
+        alert('TESTE:', form.dadosALGO2.TEST24.TEST27);
+        alert('TESTE:', form.dadosALGO2.TEST24.TEST28);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO2.especieOption.optionAtiva);
+        alert('TESTE:', form.dadosALGO2.especieOption.inputOutra);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE29);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE30);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE31);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE32);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE33);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE34);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE35);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE36);
+        alert('TESTE:', form.dadosALGO2.tipo.TESTE36Input);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO2.TESTE37);
+        alert('TESTE:', form.dadosALGO2.TESTE38);
+        alert('TESTE:', form.dadosALGO2.TESTE39);
+        alert('TESTE:', form.dadosALGO2.TESTE40);
+        alert('TESTE:', form.dadosALGO2.TESTE41);
+        alert('TESTE:', form.dadosALGO2.TESTE42);
+        alert('TESTE:', form.dadosALGO2.TESTE43);
+        alert('TESTE:');
+        alert('TESTE:', form.dadosALGO2.TESTE44.TESTE45);
+        alert('TESTE:', form.dadosALGO2.TESTE44.TESTE46);
+        alert('TESTE:', form.dadosALGO2.TESTE44.TESTE47);
+        alert('TESTE:', form.dadosALGO2.TESTE44.TESTE48);
+        alert('TESTE:', form.dadosALGO2.TESTE49);
     
-        // Fotografias
-        alert('Fotografias:');
-        alert('Gerais:', form.fotografias.gerais);
-        alert('Identificação:', form.fotografias.identificacao);
+        // TESTE50
+        alert('TESTE:');
+        alert('TESTE:', form.TESTE50.gerais);
+        alert('TESTE:', form.TESTE50.identificacao);
     
         // Estado de Conservação e Acessórios
-        alert('Estado de Conservação e Acessórios:');
-        alert('Estado de Uso:', form.estadosConsAcess.estadosUso);
-        alert('Acessórios:', form.estadosConsAcess.acessorios);
-        alert('Outros Acessórios:', form.estadosConsAcess.outros);
-        alert('Estado de Funcionamento:', form.estadosConsAcess.estadosFuncionamento);
-        alert('Outros Campos:');
-        alert('Observações:', form.estadosConsAcess.observacoes);
-        alert('Carga:', form.estadosConsAcess.carga);
-        alert('Compartimento Extra:', form.estadosConsAcess.compartimentoExtra);
-        alert('Avarias:', form.estadosConsAcess.avarias);
+        alert('TESTE:');
+        alert('TESTE:', form.estadosConsAcess.estadosUso);
+        alert('TESTE:', form.estadosConsAcess.acessorios);
+        alert('TESTE:', form.estadosConsAcess.TESTE36s);
+        alert('TESTE:', form.estadosConsAcess.TESTE79);
+        alert('TESTE:');
+        alert('TESTE:', form.estadosConsAcess.TESTE81);
+        alert('TESTE:', form.estadosConsAcess.TESTE82);
+        alert('TESTE:', form.estadosConsAcess.TESTE83);
+        alert('TESTE:', form.estadosConsAcess.TESTE84);
     };
     
 
     return(
         <SafeAreaView style={styles.safeArea}>
             <ScrollView contentContainerStyle={styles.scrollViewContainer} keyboardShouldPersistTaps="handled">
-                <Text style={styles.sectionTitle}>1) Dados da Solicitação e do Exame:</Text>
+                <Text style={styles.sectionTitle}>1) TESTE:</Text>
                 <InputTexto 
-                    label='Protocolo - SETEC/SC'
-                    value={form.dadosSoliEx.protocolSETEC} 
-                    onChangeText={(text) => handleChange('dadosSoliEx.protocolSETEC', text)}
+                    label='TESTE'
+                    value={form.dadosSoliEx.TEST1} 
+                    onChangeText={(text) => handleChange('dadosSoliEx.TEST1', text)}
                 />
                 <SafeAreaView>
                     <RadioButtons
-                        selectedOption={form.dadosSoliEx.documentOption}
-                        setSelectedOption={(value) => handleChange('dadosSoliEx.documentOption', value)}
+                        selectedOption={form.dadosSoliEx.TEST2}
+                        setSelectedOption={(value) => handleChange('dadosSoliEx.TEST2', value)}
                         options={DocumentEnum} // Passe o enum como prop
                     />
                     <TextInput 
                         style={styles.input} 
-                        value={form.dadosSoliEx.documentNumber} 
-                        onChangeText={(text) => handleChange('dadosSoliEx.documentNumber', text)}
+                        value={form.dadosSoliEx.TEST3} 
+                        onChangeText={(text) => handleChange('dadosSoliEx.TEST3', text)}
                     />
                 </SafeAreaView>
                 <SafeAreaView>
-                    <Text style={styles.sectionTitle}>Fotos:</Text>
+                    <Text style={styles.sectionTitle}>TESTE:</Text>
                     <SafeAreaView style={{
                         flexDirection: 'row',
                         justifyContent: 'space-between',
@@ -331,14 +331,14 @@ function App(){
                     }}>
                         <TextInput 
                             style={[styles.input,{width: '43%'}]} 
-                            value={form.dadosSoliEx.photoBegin} 
-                            onChangeText={(text) => handleChange('dadosSoliEx.photoBegin', text)}
+                            value={form.dadosSoliEx.TEST4} 
+                            onChangeText={(text) => handleChange('dadosSoliEx.TEST4', text)}
                         />
                         <Text style={styles.label}> até </Text>
                         <TextInput 
                             style={[styles.input,{width: '43%'}]} 
-                            value={form.dadosSoliEx.photoEnd} 
-                            onChangeText={(text) => handleChange('dadosSoliEx.photoEnd', text)}
+                            value={form.dadosSoliEx.TEST5} 
+                            onChangeText={(text) => handleChange('dadosSoliEx.TEST5', text)}
                         />
                     </SafeAreaView>
                 </SafeAreaView>
@@ -346,390 +346,390 @@ function App(){
                     <InputComMascara
                         label='Data: '
                         mask="99/99/9999"
-                        value={form.dadosSoliEx.currentDate}
-                        onChangeText={(text) => handleChange('dadosSoliEx.currentDate', text)}
+                        value={form.dadosSoliEx.TEST6}
+                        onChangeText={(text) => handleChange('dadosSoliEx.TEST6', text)}
                         placeholder="dd/mm/aaaa"
                         keyboardType="numeric"
                     />
                     <InputComMascara
                         label='Horário: '
                         mask="99:99"
-                        value={form.dadosSoliEx.currentTime}
-                        onChangeText={(text) => handleChange('dadosSoliEx.currentTime', text)}
+                        value={form.dadosSoliEx.TEST7}
+                        onChangeText={(text) => handleChange('dadosSoliEx.TEST7', text)}
                         placeholder="hh:MM"
                         keyboardType="numeric"
                     />
                 </SafeAreaView>
-                <Text style={styles.subsectionTitle}>2) Dados CLRV/INFOSEG</Text>
+                <Text style={styles.subsectionTitle}>2) TESTE</Text>
                 <InputTexto 
-                    label='Numero do CRLV:'
-                    value={form.dadosCRLV.CRLVNumber} 
-                    onChangeText={(text) => handleChange('dadosCRLV.CRLVNumber', text)}
+                    label='Numero:'
+                    value={form.dadosALGO.TEST8} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST8', text)}
                 />
                 <InputTexto 
-                    label='Renavan:'
-                    value={form.dadosCRLV.renavan} 
+                    label='TEST9:'
+                    value={form.dadosALGO.TEST9} 
                     keyboardType="numeric"
-                    onChangeText={(text) => handleChange('dadosCRLV.renavan', text)}
+                    onChangeText={(text) => handleChange('dadosALGO.TEST9', text)}
                     maxLength={10}
                 />
                 <InputComMascara
-                        label='Data do CRLV: '
+                        label='Data: '
                         mask="99/99/9999"
-                        value={form.dadosCRLV.CRLVDate}
-                        onChangeText={(text) => handleChange('dadosCRLV.CRLVDate', text)}
+                        value={form.dadosALGO.TEST10}
+                        onChangeText={(text) => handleChange('dadosALGO.TEST10', text)}
                         placeholder="dd/mm/aaaa"
                         keyboardType="numeric"
                 />
                 <InputTexto 
                     label='Esp./Tipo:'
-                    value={form.dadosCRLV.espTipo} 
-                    onChangeText={(text) => handleChange('dadosCRLV.espTipo', text)}
+                    value={form.dadosALGO.TEST11} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST11', text)}
                 />
                 <InputTexto 
-                    label='Combustível:'
-                    value={form.dadosCRLV.combustivelCarro} 
-                    onChangeText={(text) => handleChange('dadosCRLV.combustivelCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST12} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST12', text)}
                 />
                 <InputTexto 
-                    label='Marca:'
-                    value={form.dadosCRLV.marcaCarro} 
-                        onChangeText={(text) => handleChange('dadosCRLV.marcaCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST13} 
+                        onChangeText={(text) => handleChange('dadosALGO.TEST13', text)}
                 />
                 <InputTexto 
-                    label='Modelo:'
-                    value={form.dadosCRLV.modeloCarro} 
-                    onChangeText={(text) => handleChange('dadosCRLV.modeloCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST14} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST14', text)}
                 />
                 <InputTexto 
-                    label='Cor:'
-                    value={form.dadosCRLV.corCarro} 
-                    onChangeText={(text) => handleChange('dadosCRLV.corCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST15} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST15', text)}
                 />
                 <InputComMascara
                     label='Ano:'
                     mask="9999/9999"
-                    value={form.dadosCRLV.anoCarro}
-                    onChangeText={(text) => handleChange('dadosCRLV.anoCarro', text)}
+                    value={form.dadosALGO.TEST16}
+                    onChangeText={(text) => handleChange('dadosALGO.TEST16', text)}
                     placeholder="aaaa/aaaa"
                     keyboardType="numeric"
                 />
                 <InputTexto 
-                    label='Placa:'
-                    value={form.dadosCRLV.placaCarro} 
-                    onChangeText={(text) => handleChange('dadosCRLV.placaCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST17} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST17', text)}
                 />
                 <InputTexto 
-                    label='Municipio/UF:'
-                    value={form.dadosCRLV.municipioUf} 
-                    onChangeText={(text) => handleChange('dadosCRLV.municipioUf', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST18} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST18', text)}
                 />
                 <InputTexto 
-                    label='Chassi:'
-                    value={form.dadosCRLV.chassi} 
-                    onChangeText={(text) => handleChange('dadosCRLV.chassi', text)} 
+                    label='TESTE:'
+                    value={form.dadosALGO.TEST19} 
+                    onChangeText={(text) => handleChange('dadosALGO.TEST19', text)} 
                     maxLength={17}
                 />
-                <Text style={styles.subsectionTitle}>3) Características do Veículo</Text>
+                <Text style={styles.subsectionTitle}>3) TESTE</Text>
                 <InputTexto 
-                    label='Marca:'
-                    value={form.dadosVeiculo.marcaCarro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.marcaCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST13} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST13', text)}
                 />
                 <InputTexto 
-                    label='Modelo:'
-                    value={form.dadosVeiculo.modeloCarro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.modeloCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST14} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST14', text)}
                 />
                 <InputTexto 
-                    label='Motorização:'
-                    value={form.dadosVeiculo.motorCarro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.motorCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST20} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST20', text)}
                 />
                 <InputTexto 
-                    label='Cor:'
-                    value={form.dadosVeiculo.corCarro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.corCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST15} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST15', text)}
                 />
                 <InputComMascara
-                    label='Ano:'
+                    label='TESTE:'
                     mask="9999/9999"
-                    value={form.dadosVeiculo.anoCarro}
-                    onChangeText={(text) => handleChange('dadosVeiculo.anoCarro', text)}
+                    value={form.dadosALGO2.TEST16}
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST16', text)}
                     placeholder="aaaa/aaaa"
                     keyboardType="numeric"
                 />
                 <InputTexto 
-                    label='Placa:'
-                    value={form.dadosVeiculo.placaCarro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.placaCarro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST17} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST17', text)}
                 />
                 <InputTexto 
-                    label='Código da Placa:'
-                    value={form.dadosVeiculo.codigoPlaca} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.codigoPlaca', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST21} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST21', text)}
                 />
                 <InputTexto 
-                    label='Municipio/UF:'
-                    value={form.dadosVeiculo.municipioUf} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.municipioUf', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST18} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST18', text)}
                 />
                 <InputTexto 
-                    label='Chassi:'
-                    value={form.dadosVeiculo.chassi} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.chassi', text)} 
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST19} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST19', text)} 
                     maxLength={17}
                 />
                 <InputTexto 
-                    label='Código da Plaqueta:'
-                    value={form.dadosVeiculo.codigoPlaqueta} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.codigoPlaqueta', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST22} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST22', text)}
                 />
                 <InputTexto 
-                    label='Código da Lacre:'
-                    value={form.dadosVeiculo.codigoLacre} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.codigoLacre', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST23} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST23', text)}
                 />
                 <Text style={styles.label}>Características:</Text>
                 <CheckboxItem
-                    label="Monobloco"
-                    value={form.dadosVeiculo.caracteristicas.monobloco} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.caracteristicas.monobloco', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.dadosALGO2.TEST24.TEST25} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.TEST24.TEST25', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Chassis"
-                    value={form.dadosVeiculo.caracteristicas.chassis}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.caracteristicas.chassis', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.TEST24.TEST19s}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.TEST24.TEST19s', value)}
                 />
                 <CheckboxItem
-                    label="Automático"
-                    value={form.dadosVeiculo.caracteristicas.automatico}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.caracteristicas.automatico', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.TEST24.TEST26}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.TEST24.TEST26', value)}
                 />
                 <InputTexto 
-                    label='Número de Portas:'
-                    value={form.dadosVeiculo.caracteristicas.numeroPortas} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.caracteristicas.numeroPortas', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST24.TEST27} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST24.TEST27', text)}
                 />
                 <InputTexto 
-                    label='Número de Eixos:'
-                    value={form.dadosVeiculo.caracteristicas.numeroEixos} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.caracteristicas.numeroEixos', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TEST24.TEST28} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TEST24.TEST28', text)}
                 />
                 <Text style={styles.label}>Espécie:</Text>
                 <CustomRadioButton
-                    options={['Passageiro', 'Carga', 'Misto', 'Outra']}
-                    especieOption={form.dadosVeiculo.especieOption}
+                    options={['TESTE', 'TESTE', 'TESTE', 'TESTE']}
+                    especieOption={form.dadosALGO2.especieOption}
                     onEspecieOptionChange={handleEspecieOptionChange}
                 />
                 <Text style={styles.label}>Tipo:</Text>
                 <CheckboxItem
-                    label="Automóvel"
-                    value={form.dadosVeiculo.tipo.automovel} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.automovel', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE29} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE29', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Caminhão"
-                    value={form.dadosVeiculo.tipo.caminhao}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.caminhao', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE30}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE30', value)}
                 />
                 <CheckboxItem
-                    label="MicroÔnibus"
-                    value={form.dadosVeiculo.tipo.micronibus}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.micronibus', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE31}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE31', value)}
                 />
                 <CheckboxItem
-                    label="Utilitário"
-                    value={form.dadosVeiculo.tipo.utilitario} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.utilitario', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE32} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE32', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Ônibus"
-                    value={form.dadosVeiculo.tipo.onibus}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.onibus', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE33}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE33', value)}
                 />
                 <CheckboxItem
-                    label="Caminhoneta"
-                    value={form.dadosVeiculo.tipo.caminhoneta}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.caminhoneta', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE34}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE34', value)}
                 />
                 <CheckboxItem
-                    label="Caminhonete"
-                    value={form.dadosVeiculo.tipo.caminhonete} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.caminhonete', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE35} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE35', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Outro"
-                    value={form.dadosVeiculo.tipo.outro}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.tipo.outro', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.tipo.TESTE36}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.tipo.TESTE36', value)}
                 />
                 <TextInput 
-                    editable={form.dadosVeiculo.tipo.outro}
+                    editable={form.dadosALGO2.tipo.TESTE36}
                     style={styles.input}
-                    value={form.dadosVeiculo.tipo.outroInput}
-                    onChangeText={(text) => handleChange('dadosVeiculo.tipo.outroInput', text)}
-                    placeholder='Outro'
+                    value={form.dadosALGO2.tipo.TESTE36Input}
+                    onChangeText={(text) => handleChange('dadosALGO2.tipo.TESTE36Input', text)}
+                    placeholder='TESTE'
                 />
                 <InputTexto 
-                    label='Número do Motor:'
-                    value={form.dadosVeiculo.numeroMotor} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroMotor', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE37} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE37', text)}
                 />
                 <InputTexto 
-                    label='Número da Caixa de Câmbio:'
-                    value={form.dadosVeiculo.numeroCaixaCambio} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroCaixaCambio', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE38} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE38', text)}
                 />
                 <InputTexto 
-                    label='Número do Eixo Traseiro:'
-                    value={form.dadosVeiculo.numeroEixoTraseiro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroEixoTraseiro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE39} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE39', text)}
                 />
                 <InputTexto 
-                    label='Número da Carroceria:'
-                    value={form.dadosVeiculo.numeroCarroceria} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroCarroceria', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE40} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE40', text)}
                 />
                 <InputTexto 
-                    label='Número da Cabine:'
-                    value={form.dadosVeiculo.numeroCabine} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroCabine', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE41} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE41', text)}
                 />
                 <InputTexto 
-                    label='Hodômetro:'
-                    value={form.dadosVeiculo.hodometro} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.hodometro', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE42} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE42', text)}
                 />
                 <InputTexto 
-                    label='Número dos Vidros:'
-                    value={form.dadosVeiculo.numeroVidros} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroVidros', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE43} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE43', text)}
                 />
                 <InputTexto 
-                    label='Número das Etiquetas:'
-                    value={form.dadosVeiculo.numeroEtiquetas.inputNumero} 
-                    onChangeText={(text) => handleChange('dadosVeiculo.numeroEtiquetas.inputNumero', text)}
+                    label='TESTE:'
+                    value={form.dadosALGO2.TESTE44.TESTE45} 
+                    onChangeText={(text) => handleChange('dadosALGO2.TESTE44.TESTE45', text)}
                 />
                 <CheckboxItem
-                    label="Porta"
-                    value={form.dadosVeiculo.numeroEtiquetas.porta}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.numeroEtiquetas.porta', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.TESTE44.TESTE46}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.TESTE44.TESTE46', value)}
                 />
                 <CheckboxItem
-                    label="Motor"
-                    value={form.dadosVeiculo.numeroEtiquetas.motor} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.numeroEtiquetas.motor', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.dadosALGO2.TESTE44.TESTE47} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.TESTE44.TESTE47', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Piso"
-                    value={form.dadosVeiculo.numeroEtiquetas.piso}
-                    onChange={(value) => handleCheckboxChange('dadosVeiculo.numeroEtiquetas.piso', value)}
+                    label="TESTE"
+                    value={form.dadosALGO2.TESTE44.TESTE48}
+                    onChange={(value) => handleCheckboxChange('dadosALGO2.TESTE44.TESTE48', value)}
                 />
                 <InputComMascara
-                    label='Ano do Cinto de Segurança: '
+                    label='TESTE: '
                     mask="99/99/9999"
-                    value={form.dadosSoliEx.currentDate}
-                    onChangeText={(text) => handleChange('dadosSoliEx.currentDate', text)}
+                    value={form.dadosSoliEx.TEST6}
+                    onChangeText={(text) => handleChange('dadosSoliEx.TEST6', text)}
                     placeholder="dd/mm/aaaa"
                     keyboardType="numeric"
                 />
-                <Text style={styles.subsectionTitle}>4) Fotografias:</Text>
+                <Text style={styles.subsectionTitle}>4) TESTE50:</Text>
                 <Text style={styles.label}>Gerais:</Text>
                 <CheckboxItem
-                    label="Frontal"
-                    value={form.fotografias.gerais.frontal}
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.frontal', value)}
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE51}
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE51', value)}
                 />
                 <CheckboxItem
-                    label="Traseira"
-                    value={form.fotografias.gerais.traseira} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.traseira', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE52} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE52', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Lateral Esquerda"
-                    value={form.fotografias.gerais.lateralEsquerda}
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.lateralEsquerda', value)}
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE53}
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE53', value)}
                 />
                 <CheckboxItem
-                    label="Lateral Direita"
-                    value={form.fotografias.gerais.lateralDireita}
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.lateralDireita', value)}
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE54}
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE54', value)}
                 />
                 <CheckboxItem
-                    label="Motor"
-                    value={form.fotografias.gerais.motor} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.motor', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE47} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE47', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Cabine"
-                    value={form.fotografias.gerais.cabine}
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.cabine', value)}
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE55}
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE55', value)}
                 />
                 <CheckboxItem
-                    label="Maleiro/Carroceria"
-                    value={form.fotografias.gerais.carroceria}
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.carroceria', value)}
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE56}
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE56', value)}
                 />
                 <CheckboxItem
-                    label="Hodômetro"
-                    value={form.fotografias.gerais.hodometro} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.hodometro', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE42} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE42', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Painel"
-                    value={form.fotografias.gerais.painel}
-                    onChange={(value) => handleCheckboxChange('fotografias.gerais.painel', value)}
+                    label="TESTE"
+                    value={form.TESTE50.gerais.TESTE57}
+                    onChange={(value) => handleCheckboxChange('TESTE50.gerais.TESTE57', value)}
                 />
                 <Text style={styles.label}>Identificações:</Text>
                 <CheckboxItem
-                    label="Placas"
-                    value={form.fotografias.identificacao.placas}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.placas', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TESTE58}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TESTE58', value)}
                 />
                 <CheckboxItem
-                    label="Plaquetas"
-                    value={form.fotografias.identificacao.plaquetas} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.plaquetas', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TESTE59} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TESTE59', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Código das Placas"
-                    value={form.fotografias.identificacao.codigoPlacas}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.codigoPlacas', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TEST21s}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TEST21s', value)}
                 />
                 <CheckboxItem
-                    label="Código das Plaquetas"
-                    value={form.fotografias.identificacao.codigoPlaquetas}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.codigoPlaquetas', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TEST22s}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TEST22s', value)}
                 />
                 <CheckboxItem
-                    label="Lacres"
-                    value={form.fotografias.identificacao.lacres} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.lacres', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TESTE60} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TESTE60', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Numero do Motor"
-                    value={form.fotografias.identificacao.numeroMotor}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.numeroMotor', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TESTE37}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TESTE37', value)}
                 />
                 <CheckboxItem
-                    label="Numero do Chassi"
-                    value={form.fotografias.identificacao.numeroChassi} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.numeroChassi', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.numeroTEST19} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.numeroTEST19', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Etiquetas"
-                    value={form.fotografias.identificacao.etiquetas}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.etiquetas', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.etiquetas}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.etiquetas', value)}
                 />
                 <CheckboxItem
-                    label="Numero dos Vidros"
-                    value={form.fotografias.identificacao.numeroVidros}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.numeroVidros', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TESTE43}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TESTE43', value)}
                 />
                 <CheckboxItem
-                    label="Numero do Câmbio"
-                    value={form.fotografias.identificacao.numeroCambio}
-                    onChange={(value) => handleCheckboxChange('fotografias.identificacao.numeroCambio', value)}
+                    label="TESTE"
+                    value={form.TESTE50.identificacao.TESTE61}
+                    onChange={(value) => handleCheckboxChange('TESTE50.identificacao.TESTE61', value)}
                 />
                 <Text style={styles.subsectionTitle}>5) Estado de Uso, Conservação e Acessórios:</Text>
                 <RadioButtonsConditions
@@ -740,112 +740,112 @@ function App(){
                 />
                 <Text style={styles.label}>Acessórios Básicos:</Text>
                 <CheckboxItem
-                    label="Macaco"
-                    value={form.estadosConsAcess.acessorios.macaco}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.macaco', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.acessorios.TESTE62}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.TESTE62', value)}
                 />
                 <CheckboxItem
-                    label="Triângulo"
-                    value={form.estadosConsAcess.acessorios.triangulo} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.triangulo', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.estadosConsAcess.acessorios.TESTE63} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.TESTE63', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Estepe"
-                    value={form.estadosConsAcess.acessorios.estepe}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.estepe', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.acessorios.TESTE64}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.TESTE64', value)}
                 />
                 <CheckboxItem
-                    label="Extintor"
-                    value={form.estadosConsAcess.acessorios.extintor}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.extintor', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.acessorios.TESTE65}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.TESTE65', value)}
                 />
                 <CheckboxItem
-                    label="Chave de roda"
-                    value={form.estadosConsAcess.acessorios.chaveRoda} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.chaveRoda', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.estadosConsAcess.acessorios.TESTE66} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.acessorios.TESTE66', value)} // Atualiza no estado
                 />
-                <Text style={styles.label}>Outros:</Text>
+                <Text style={styles.label}>TESTE36s:</Text>
                 <CheckboxItem
-                    label="Ar Condicionado"
-                    value={form.estadosConsAcess.outros.arCondicionado}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.arCondicionado', value)}
-                />
-                <CheckboxItem
-                    label="Vidros Elétricos"
-                    value={form.estadosConsAcess.outros.vidrosEletricos} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.vidrosEletricos', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE67}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE67', value)}
                 />
                 <CheckboxItem
-                    label="Alarme"
-                    value={form.estadosConsAcess.outros.alarme}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.alarme', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE68} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE68', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Tapetes"
-                    value={form.estadosConsAcess.outros.tapetes}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.tapetes', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE69}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE69', value)}
                 />
                 <CheckboxItem
-                    label="Direção Hidráulica"
-                    value={form.estadosConsAcess.outros.direcaoHidraulica}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.direcaoHidraulica', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE70}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE70', value)}
                 />
                 <CheckboxItem
-                    label="Travas Elétricas"
-                    value={form.estadosConsAcess.outros.travasEletricas} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.travasEletricas', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE71}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE71', value)}
                 />
                 <CheckboxItem
-                    label="Películas"
-                    value={form.estadosConsAcess.outros.peliculas}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.peliculas', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE72} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE72', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Antena"
-                    value={form.estadosConsAcess.outros.antena} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.antena', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE73}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE73', value)}
                 />
                 <CheckboxItem
-                    label="Farol de Milha"
-                    value={form.estadosConsAcess.outros.farolMilha}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.farolMilha', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE74} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE74', value)} // Atualiza no estado
                 />
                 <CheckboxItem
-                    label="Farol de Neblina"
-                    value={form.estadosConsAcess.outros.farolNeblina}
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.farolNeblina', value)}
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE75}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE75', value)}
                 />
                 <CheckboxItem
-                    label="Som"
-                    value={form.estadosConsAcess.outros.som} // Passando o valor atual
-                    onChange={(value) => handleCheckboxChange('estadosConsAcess.outros.som', value)} // Atualiza no estado
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE77}
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE77', value)}
+                />
+                <CheckboxItem
+                    label="TESTE"
+                    value={form.estadosConsAcess.TESTE36s.TESTE78} // Passando o valor atual
+                    onChange={(value) => handleCheckboxChange('estadosConsAcess.TESTE36s.TESTE78', value)} // Atualiza no estado
                 />
                 <Text style={styles.label}>Estados de Funcionamento:</Text>
                 <RadioButtonsConditions
                     headers={["F","NF","NT"]}
-                    items={itemsFuncionando}
-                    radioStates={form.estadosConsAcess.estadosFuncionamento} // Passando o estado dos radio buttons
+                    items={TESTE80}
+                    radioStates={form.estadosConsAcess.TESTE79} // Passando o estado dos radio buttons
                     onRadioChange={handleRadioChangeFuncionamento}
                 />
                 <TextFieldCustom
-                    label="Observações:"
-                    value={form.estadosConsAcess.observacoes} 
-                    onChangeText={(text) => handleChange('estadosConsAcess.observacoes', text)}
+                    label="TESTE:"
+                    value={form.estadosConsAcess.TESTE81} 
+                    onChangeText={(text) => handleChange('estadosConsAcess.TESTE81', text)}
                 />
                 <TextFieldCustom
-                    label="Carga:"
-                    value={form.estadosConsAcess.carga} 
-                    onChangeText={(text) => handleChange('estadosConsAcess.carga', text)}
+                    label="TESTE:"
+                    value={form.estadosConsAcess.TESTE82} 
+                    onChangeText={(text) => handleChange('estadosConsAcess.TESTE82', text)}
                 />
                 <TextFieldCustom
-                    label="Compartimentos Extras:"
-                    value={form.estadosConsAcess.compartimentoExtra} 
-                    onChangeText={(text) => handleChange('estadosConsAcess.compartimentoExtra', text)}
+                    label="TESTE:"
+                    value={form.estadosConsAcess.TESTE83} 
+                    onChangeText={(text) => handleChange('estadosConsAcess.TESTE83', text)}
                 />
                 <TextFieldCustom
-                    label="Avarias:"
-                    value={form.estadosConsAcess.avarias} 
-                    onChangeText={(text) => handleChange('estadosConsAcess.avarias', text)}
+                    label="TESTE:"
+                    value={form.estadosConsAcess.TESTE84} 
+                    onChangeText={(text) => handleChange('estadosConsAcess.TESTE84', text)}
                 />
             </ScrollView>
             <Button title="Enviar" onPress={handleSubmit} />
