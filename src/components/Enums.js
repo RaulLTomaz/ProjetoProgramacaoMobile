@@ -1,6 +1,6 @@
 const DocumentEnum = Object.freeze({
-    IPL: 'IPL',
-    TCO: 'TCO',
+    TESTE113: 'TESTE113',
+    TESTE114: 'TESTE114',
     Processos: 'Processos',
   });
   
